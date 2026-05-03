@@ -15,9 +15,8 @@
 </p>
 
 <p align="center">
-  <img src="./media/V101.gif" alt="EuRoC V101" width="32%">
-  <img src="./media/fr1_desk.gif" alt="TUM fr1/desk" width="32%">
-  <img src="./media/MH05.gif" alt="EuRoC MH05" width="32%">
+  <img src="./media/fr1_desk.gif" alt="TUM fr1/desk" width="48%">
+  <img src="./media/MH05.gif" alt="EuRoC MH05" width="48%">
 </p>
 <p align="center">
   Given a monocular video sequence, GaussianFlow SLAM tracks the camera trajectory and reconstructs a photorealistic 3DGS map by leveraging optical flow as geometric supervision, without any depth measurements.
