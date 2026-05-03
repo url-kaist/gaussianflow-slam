@@ -14,16 +14,16 @@
   <div align="center"></div>
 </p>
 
-> **This repository is currently under construction. Code will be released soon.**
-
 <p align="center">
   <img src="./media/V101.gif" alt="EuRoC V101" width="32%">
   <img src="./media/fr1_desk.gif" alt="TUM fr1/desk" width="32%">
   <img src="./media/MH05.gif" alt="EuRoC MH05" width="32%">
 </p>
 <p align="center">
-  Given a monocular video sequence, GaussianFlow SLAM accurately tracks the camera trajectory and reconstructs a photorealistic 3D Gaussian map by leveraging optical flow as geometric supervision, without any depth measurements.
+  Given a monocular video sequence, GaussianFlow SLAM tracks the camera trajectory and reconstructs a photorealistic 3DGS map by leveraging optical flow as geometric supervision, without any depth measurements.
 </p>
+
+> **This repository is currently under construction. Code will be released soon.**
 
 ## Citation
 ```bibtex
