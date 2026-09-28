@@ -1,0 +1,6 @@
+[submodule "thirdparty/lietorch"]
+	path = thirdparty/lietorch
+	url = https://github.com/princeton-vl/lietorch.git
+[submodule "thirdparty/diff-gaussian-rasterization/third_party/glm"]
+	path = thirdparty/diff-gaussian-rasterization/third_party/glm
+	url = https://github.com/g-truc/glm.git

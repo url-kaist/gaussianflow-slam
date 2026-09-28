@@ -1,0 +1,86 @@
+Results:
+  save_results: true
+  save_dir: results
+  save_trj: false
+  use_gui: false
+  eval_rendering: true
+  save_video: false
+  save_kf_images: false
+Training:
+  ssim_mask_eroded: false
+  adaptive_training_edges: false
+  lambda_flow: 0.5
+  flow_func: log-logistic
+  visible_only_adam: false
+  fast_mode:
+    enabled: false
+    refine_per_insert: 200
+    recent_window: 16
+    active_max_edges: 16
+    inac_max_edges: 8
+    freezing:
+      enabled: true
+      max_age_iters: 500
+    inactive_edges:
+      every_n_iters: 5
+      disable: true
+    use_full_batch: true
+    full_batch:
+      max_iters: 15
+      loss_threshold: 0.05
+      split_iter: 7
+      prune_iter: 12
+      gui_every_iter: 2
+    single_batch:
+      inac_iters_per_edge: 3
+      edge_iters_per_incident: 5
+  init_itr_num: 1000
+  init_gaussian_update: 150
+  init_gaussian_update_offset: 10
+  init_gaussian_prune: 300
+  pcd_downsample_init: 32
+  pcd_downsample: 64
+  adaptive_pointsize: true
+  point_size: 1.0
+  tracking_itr_num: 80
+  gaussian_update_every: 30
+  gaussian_update_offset: 0
+  gaussian_prune_every: 70
+  gaussian_prune_offset: 0
+  adaptive_mapping_window: true
+  edge_threshold: 1.1
+  rgb_boundary_threshold: 0.01
+  alpha: 0.9
+  spherical_harmonics: false
+  lr:
+    cam_rot_delta: 0.003
+    cam_trans_delta: 0.001
+  gui_interval: 10
+  radii_split: 10
+  radii_cut_always: 40
+  posgrad_th: 0.0001
+  error_th: 0.2
+  norm_error_split: 0.1
+  opacity_th: 0.05
+  radii_tiny: 5
+  radii_prune: 7
+  found_consensus_th: 0
+  norm_error_prune: 1.5
+  norm_error_prune_img: 1.0
+  norm_error_prune_flow: 0.4
+opt_params:
+  position_lr_init: 0.0004
+  position_lr_final: 1.6e-06
+  position_lr_delay_mult: 0.01
+  position_lr_max_steps: 26000
+  feature_lr: 0.0025
+  opacity_lr: 0.05
+  scaling_lr: 0.001
+  rotation_lr: 0.001
+  percent_dense: 0.01
+  lambda_dssim: 0.2
+model_params:
+  sh_degree: 0
+pipeline_params:
+  convert_SHs_python: false
+  compute_cov3D_python: false

@@ -1,0 +1,3 @@
+# ZED SN24616 left camera at 1280x720. The exported VIEW.LEFT frames are rectified.
+# Factory calibration: https://calib.stereolabs.com/?SN=24616
+700.865 700.865 650.31 340.307

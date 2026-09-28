@@ -1,0 +1,3 @@
+# Azure Kinect values copied from each exported sequence's config.yaml.
+# The RGB images were already undistorted during export.
+407.71744791666663 407.76432291666663 318.7814534505208 241.21771240234375

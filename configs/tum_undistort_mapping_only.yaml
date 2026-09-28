@@ -1,0 +1,11 @@
+# DROID owns camera poses; 3DGS mapping keeps all camera poses fixed.
+inherit_from: tum_undistort.yaml
+
+Results:
+  use_gui: true
+
+Training:
+  # Do not let map visibility change the frontend window in this control.
+  adaptive_mapping_window: false
+  fast_mode:
+    enabled: true

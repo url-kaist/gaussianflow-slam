@@ -1,0 +1,18 @@
+# DROID-owned camera poses with pose-fixed, all-Adam 3DGS mapping.
+#
+# The fast-mode tracking thread runs only the DROID recurrent frontend/DBA,
+# while every mapping call keeps the camera poses fixed.  Disable the adaptive
+# map-derived frontend window as well so the 3DGS map cannot indirectly change
+# the DROID pose trajectory used for this control.
+inherit_from: mono.yaml
+
+Results:
+  save_results: true
+  use_gui: true
+  eval_rendering: true
+  save_kf_images: false
+
+Training:
+  adaptive_mapping_window: false
+  fast_mode:
+    enabled: true

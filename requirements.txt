@@ -1,0 +1,35 @@
+# PyTorch for CUDA 11.8.
+# For a different CUDA toolkit, change the three pinned versions and the
+# index URL below (e.g. cu121 / cu128).
+torch==2.1.2+cu118
+torchvision==0.16.2+cu118
+torchaudio==2.1.2+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# Core
+numpy==1.26.4
+setuptools==69.5.1
+wheel
+scipy
+opencv-python==4.8.1.78
+matplotlib==3.7.5
+pyyaml
+tqdm
+munch
+rich
+gdown
+
+# Gaussian splatting / geometry
+plyfile==0.8.1
+open3d==0.17.0
+torchmetrics
+lpips
+
+# GUI viewer (Open3D + OpenGL)
+PyOpenGL
+glfw
+PyGLM
+imgviz
+
+# Trajectory evaluation
+evo==1.11.0

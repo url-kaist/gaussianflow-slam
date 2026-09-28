@@ -1,0 +1,10 @@
+# Original synchronous GaussianFlow SLAM path: optimize the 3DGS map and
+# feed GaussianFlow pose updates back into the SLAM frontend.
+inherit_from: tum_distort.yaml
+
+Results:
+  use_gui: true
+
+Training:
+  fast_mode:
+    enabled: false
